@@ -11,10 +11,7 @@ nav{
 .open-sans-normal{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 .nav-title{
     font-weight: 800;
@@ -57,7 +54,7 @@ nav ul li a{
 
 }
 .pic{
-    width: 580px;
+    width: 564px;
 }
 .banner{
     display: flex;
@@ -67,7 +64,7 @@ nav ul li a{
     
 }
 .banner-content{
-max-width: 580px;
+    max-width: 564px;
 }
 .header{
     background-image: url(../images/developer.png),url(../images/header_bg.png);
@@ -211,9 +208,28 @@ footer input[type="text"] ,footer input[type="email"] ,footer textarea{
 }
 
 @media screen and (max-width:576px) {
-    .whatido , footer{
+    .whatido ,
+    footer,
+     .banner {
         flex-direction: column;
     }
+    .banner{
+        margin: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .pic{
+        width: 100%;
+    }
+    /* nav ul{
+        flex-direction: column;
+    } */
+    nav{
+        margin: 20px;
+        flex-direction: column;
+        }
+
     .resume-container{
         flex-direction: column;
         margin-left: 20px;
